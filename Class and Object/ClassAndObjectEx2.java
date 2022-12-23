@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 class Student{                                                  //Class
     int rollNum;                                                //Attribute
     String name;                                                //Attribute
@@ -6,6 +8,7 @@ class Student{                                                  //Class
         name = n;
     }
     void studentDetails(){                                      //Method
+        System.out.println("Student Detaiils are ==>");
         System.out.println("Roll number = "+rollNum);
         System.out.println("Name = "+name);
     }
@@ -13,7 +16,13 @@ class Student{                                                  //Class
 public class ClassAndObjectEx{
     public static void main(String[] args){
         Student sobjr = new Student();                          //Object Creation for Student Class
-        sobjr.insertRecord(10, "Ram");
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter student roll number: ");
+        int roll = sc.nextInt();
+        sc.nextLine();
+        System.out.print("Enter student name: ");
+        String name = sc.nextLine();
+        sobjr.insertRecord(roll, name);
         sobjr.studentDetails();
     }
 }
