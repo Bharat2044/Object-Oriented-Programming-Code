@@ -1,2 +1,2 @@
 # Object-Oriented-Programming-Code
-Object Oriented Programming Code in Java
+A code repo for Object-Oriented-Programming
